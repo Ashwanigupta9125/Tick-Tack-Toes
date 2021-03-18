@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="180dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:hint="@string/entre_name"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="LabelFor" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="201dp"
+        android:layout_height="190dp"
+        android:layout_marginEnd="232dp"
+        android:contentDescription="@string/todo"
+
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/image001" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="487dp"
+        android:layout_height="212dp"
+        android:layout_marginTop="520dp"
+
+        android:layout_marginEnd="1dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:srcCompat="@drawable/images002" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="453dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/image004"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="107dp"
+            android:layout_height="130dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/todo"
+            android:onClick="dropin"
+            android:tag="1"
+
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="103dp"
+            android:layout_height="116dp"
+
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@string/todo"
+            android:onClick="dropin"
+            android:tag="2"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="118dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="@string/todo"
+            android:onClick="dropin"
+            android:tag="3"
+
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="111dp"
+            android:layout_height="114dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/todo"
+            android:onClick="dropin"
+            android:tag="4"
+
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="106dp"
+            android:layout_height="118dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+
+            android:contentDescription="@string/todo"
+            android:onClick="dropin"
+            android:tag="5"
+
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/img6"
+            android:layout_width="124dp"
+            android:layout_height="126dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="4dp"
+            android:contentDescription="@string/todo"
+            android:onClick="dropin"
+            android:tag="6"
+
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/img7"
+            android:layout_width="111dp"
+            android:layout_height="114dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/todo"
+            android:onClick="dropin"
+            android:tag="7"
+
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/img8"
+            android:layout_width="106dp"
+            android:layout_height="118dp"
+            android:layout_marginTop="20dp"
+           android:layout_marginStart="25dp"
+            android:contentDescription="@string/todo"
+            android:onClick="dropin"
+            android:tag="8"
+
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/img9"
+            android:layout_width="118dp"
+            android:layout_height="110dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/todo"
+            android:onClick="dropin"
+            android:tag="9"
+
+            tools:ignore="OnClick" />
+
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/text01"
+        android:layout_width="231dp"
+        android:layout_height="62dp"
+        android:padding="10dp"
+        android:paddingStart="25dp"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="227dp"
+        android:layout_height="58dp"
+        android:alpha=".6"
+        android:contentDescription="TODO"
+        android:onClick="resumein"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="0.942"
+        app:srcCompat="@drawable/rece01"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/text03"
+        android:layout_width="121dp"
+        android:layout_height="34dp"
+        android:alpha="1"
+
+        android:gravity="center"
+
+        android:onClick="resumein"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton6"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton6"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/imageButton6"
+        app:layout_constraintTop_toTopOf="@+id/imageButton6"
+        app:layout_constraintVertical_bias="0.428" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

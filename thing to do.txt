@@ -1,0 +1,7 @@
+using seekbar to set timer in game ;
+resume button;
+slaph screen;
+
+
+
+connoton to net for two player;

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".slaps">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="467dp"
+        android:layout_height="855dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62"
+        app:srcCompat="@drawable/backgroudm"
+        android:contentDescription="@string/todo" />
+
+    <Button
+        android:id="@+id/Button1"
+        android:layout_width="195dp"
+        android:layout_height="68dp"
+        android:alpha=".5"
+        android:text="@string/_05_second"
+        android:textColor="@color/black"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.736"
+        app:srcCompat="@drawable/rec01" />
+
+    <Button
+        android:id="@+id/Button2"
+
+        android:layout_width="195dp"
+        android:layout_height="68dp"
+        android:alpha=".5"
+        android:text="@string/_15_second"
+        android:textColor="@color/black"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button"
+        app:layout_constraintVertical_bias="0.272"
+        app:srcCompat="@drawable/rec01" />
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="195dp"
+        android:layout_height="68dp"
+        android:alpha=".5"
+
+        android:textColor="@color/black"
+        android:text="@string/_10_second"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Button2"
+        app:layout_constraintStart_toStartOf="@+id/Button2"
+        app:layout_constraintTop_toBottomOf="@+id/Button1"
+        app:layout_constraintVertical_bias="0.157"
+        app:srcCompat="@drawable/rec01" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="393dp"
+        android:layout_height="47dp"
+         android:text="SELECT GAME COUNTDOWN TIMER"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/Button1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
